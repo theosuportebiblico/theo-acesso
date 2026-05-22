@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
       display: flex;
@@ -16,46 +16,95 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
     .container {
-      max-width: 500px;
-      padding: 30px;
+      max-width: 600px;
+      padding: 40px;
       background: rgba(255,255,255,0.05);
-      border-radius: 15px;
+      border-radius: 20px;
       box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
     h1 {
-      color: #22c55e;
-      margin-bottom: 10px;
+      color: #ff6b35;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      text-shadow: 0 2px 10px rgba(255,107,53,0.3);
     }
 
     p {
-      font-size: 16px;
+      font-size: 1em;
       margin-bottom: 20px;
-      line-height: 1.5;
+      line-height: 1.8;
+      color: #e0e0e0;
+    }
+
+    strong {
+      color: #22c55e;
+    }
+
+    .exemplos {
+      background: rgba(34, 197, 94, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 25px 0;
+      border-left: 4px solid #22c55e;
+      text-align: left;
+    }
+
+    .exemplos p {
+      margin: 10px 0;
+      font-size: 0.95em;
     }
 
     .botao {
       display: inline-block;
-      padding: 15px 25px;
-      background: #22c55e;
-      color: black;
+      padding: 18px 40px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: white;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 12px;
       text-decoration: none;
-      transition: 0.3s;
+      transition: all 0.3s;
+      font-size: 1.1em;
+      box-shadow: 0 5px 20px rgba(34, 197, 94, 0.4);
+      margin: 20px 0;
+      display: inline-block;
     }
 
     .botao:hover {
-      background: #16a34a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(34, 197, 94, 0.6);
+    }
+
+    .botao:active {
+      transform: translateY(0);
     }
 
     .numero {
-      margin-top: 20px;
-      font-size: 14px;
+      margin-top: 25px;
+      font-size: 0.95em;
       color: #94a3b8;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        padding: 25px;
+      }
+
+      p {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
@@ -63,14 +112,25 @@
 <body>
 
   <div class="container">
-    <h1>✅ Acesso Liberado!</h1>
+    <h1>🔥 Bem-vindo ao THEO!</h1>
 
     <p>
-      Parabéns! Seu acesso ao <strong>THEO – Tutor Bíblico</strong> foi ativado com sucesso.
+      Seu acesso foi liberado com sucesso.
+      Agora você tem em mãos um <strong>tutor bíblico disponível 24h</strong> para te ajudar a entender as Escrituras com profundidade.
     </p>
 
     <p>
-      Clique no botão abaixo para começar agora mesmo:
+      Você pode fazer perguntas como:
+    </p>
+
+    <div class="exemplos">
+      <p>📖 "O que significa esse versículo?"</p>
+      <p>📖 "Explique esse texto no contexto bíblico"</p>
+      <p>📖 "Qual o significado teológico disso?"</p>
+    </div>
+
+    <p>
+      👇 Clique abaixo e comece agora:
     </p>
 
     <a class="botao" href="https://wa.me/5567991791791" target="_blank">
